@@ -1,0 +1,82 @@
+<html>
+<head>
+    <link href="/static/css/theme.css" rel='stylesheet' type='text/css'/>
+    <link href="/static/css/style.css" rel='stylesheet' type='text/css'/>
+</head>
+<body>
+<main id="content" role="main">
+    <!-- Hero -->
+    <div class="bg-primary-dark position-relative overflow-hidden">
+        <div class="container content-space-2">
+            <div class="row justify-content-center align-items-lg-center">
+                <div class="col-md-8 col-lg-6 mb-7 mb-lg-0">
+                    <!-- Heading -->
+                    <div class="pe-lg-3 mb-7">
+                        <h1 class="display-3 text-white mb-3 mb-md-5">Api Automation Test Platform
+                        </h1>
+                        <p class="lead text-white-70">Creating api automation test cases for Lumin</p>
+                    </div>
+                    <!-- End Heading -->
+
+
+                </div>
+                <!-- End Col -->
+
+                <div class="col-md-8 col-lg-6">
+                    <div class="ps-lg-5">
+                        <!-- Card -->
+                        <div class="card card-lg">
+                            <div class="card-body">
+                                <div class="row align-items-sm-center mb-5">
+                                    <div class="col-sm-auto order-sm-2 mb-3 mb-sm-0">
+                                    </div>
+                                    <!-- End Col -->
+
+                                    <div class="col-sm">
+                                        <h5 class="card-title">Log in</h5>
+                                    </div>
+                                    <!-- End Col -->
+                                </div>
+                                <!-- End Row -->
+
+                                <form action="/login/" method="post">
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label class="form-label">Username</label>
+                                        <input type="text" class="form-control form-input" name="username" placeholder="Type your username">
+                                    </div>
+                                    <!-- End Form -->
+
+                                    <!-- Form -->
+                                    <div class="mb-4">
+                                        <label class="form-label">Password</label>
+                                        <input type="password" class="form-control form-input" name="password" placeholder="Type your password">
+                                    </div>
+                                    <!-- End Form -->
+
+                                    {% csrf_token %}
+                                    <div class="d-grid text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                                        <span class="form-text">Need help? <a class="link" href="/">Register<i class="bi-chevron-right small ms-1"></i></a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+
+            <div class="border-top border-white-10 my-10"></div>
+
+        </div>
+    </div>
+    <!-- End Hero -->
+
+
+</main>
+
+</body>
+</html>
